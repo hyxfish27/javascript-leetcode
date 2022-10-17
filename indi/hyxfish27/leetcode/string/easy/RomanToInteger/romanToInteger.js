@@ -15,7 +15,7 @@ romanMap.set('M', 1000)
  * @return {number} integer
  * @desc 將羅馬數字轉換成整數
  */
-export const romanToInt = (s) => {
+export const romanToInteger = (s) => {
   let result = 0
   if (s === null || s === undefined) {
     result = 0
