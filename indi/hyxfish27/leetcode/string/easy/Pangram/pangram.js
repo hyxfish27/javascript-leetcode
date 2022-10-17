@@ -5,7 +5,7 @@
  * @desc 檢查 sentence 是否為 pangram 語句
  */
 export const pangram = (sentence) => {
-  if (sentence.length >= 1000) {
+  if (sentence.length > 1000) {
     return false
   }
 

@@ -23,7 +23,7 @@ describe('Pangram Test Cases', () => {
   it('should NOT pass if the length of the sentence is over 1000', () => {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     let longStr = ''
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 1001; i++) {
       longStr += characters.charAt(Math.floor(Math.random() * characters.length))
     }
     expect(pangram(longStr)).toBe(false)
