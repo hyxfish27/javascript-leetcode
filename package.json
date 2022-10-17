@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:unit": "vitest --config ./vite.config.js"
   },
   "devDependencies": {
     "eslint": "^8.0.1",
@@ -14,6 +15,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "vite": "^3.1.0"
+    "vite": "^3.1.0",
+    "vitest": "^0.24.3"
   }
 }
