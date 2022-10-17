@@ -1,4 +1,3 @@
-// leetcode: https://leetcode.com/problems/roman-to-integer/
 const romanMap = new Map()
 
 romanMap.set('I', 1)
