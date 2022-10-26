@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest --config ./vite.config.js"
+    "test:vitest": "vitest --config ./vite.config.js"
   },
   "devDependencies": {
     "eslint": "^8.0.1",
