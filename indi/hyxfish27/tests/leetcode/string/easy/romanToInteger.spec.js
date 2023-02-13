@@ -1,4 +1,4 @@
-import { romanToInteger } from '../../../../leetcode/string/easy/RomanToInteger/romanToInteger'
+import { romanToInteger } from '@leetcode/string/easy/RomanToInteger/romanToInteger'
 import { describe, it, expect } from 'vitest'
 
 describe('Roman To Integer Test Cases', () => {

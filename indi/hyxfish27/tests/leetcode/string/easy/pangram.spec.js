@@ -1,4 +1,4 @@
-import { pangram } from '../../../../leetcode/string/easy/Pangram/pangram'
+import { pangram } from '@leetcode/string/easy/Pangram/pangram'
 import { describe, it, expect } from 'vitest'
 
 const pangramCases = [
