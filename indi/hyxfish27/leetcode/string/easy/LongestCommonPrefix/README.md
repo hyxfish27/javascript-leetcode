@@ -58,3 +58,5 @@ export const longestCommonPrefix = (strs) => {
   return prefixStr
 }
 ```
+### TODO
+時間 & 空間複雜度偏高，可以往這個方向再優化
