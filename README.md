@@ -1,21 +1,26 @@
 # javascript-leetcode
 ## leetcode 解題 x 使用 vitest 做測試
+---
 
 ### Easy
----
-[13. RomanToInteger](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/string/easy/RomanToInteger)
 
-[14. LongestCommonPrefix](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/string/easy/LongestCommonPrefix)
+[13. Roman To Integer](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/string/easy/RomanToInteger)
+
+[14. Longest Common Prefix](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/string/easy/LongestCommonPrefix)
+
+[67. Add Binary](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/number/easy/AddBinary)
 
 [1832. Pangram](https://github.com/hyxfish27/javascript-leetcode/tree/main/indi/hyxfish27/leetcode/string/easy/Pangram)
 
 ### Medium
----
+
 to be continued :))
 
 ### Hard
----
+
 to be continued :))
+
+---
 
 ## 使用版本
 vite: ```^3.1.0```
