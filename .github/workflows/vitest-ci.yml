@@ -10,19 +10,26 @@ on:
     branches: [main]
 jobs:
   build:
+  name: Test
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
 
-    runs-on: ubuntu-latest
+    - name: Set Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
 
-    strategy:
-      matrix:
-        node-version: [16.18.0]
+    - name: Run install
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: install # will run `yarn install` command
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: yarn ci
-      - run: yarn build --if-present
-      - run: yarn test-vitest
+    - name: Build production bundle
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: build # will run `yarn vite build` command
+    - name: Test the app
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: test-vitest # will run `yarn vite test-vitest` command
