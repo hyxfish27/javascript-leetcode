@@ -1,0 +1,35 @@
+# workflow name
+name: vitest-ci
+
+# 什麼情況下觸發 workflow
+on:
+  # 在 main branch 建立 Branch 與 Pull Request 時觸發 workflow 
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    name: Build & Test Continuous Integration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set Node.js version 16.18.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.18.0
+
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
+
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build # will run `yarn vite build` command
+      - name: Test the leetcode
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test-vitest # will run `yarn vite test-vitest` command
