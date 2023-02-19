@@ -1,6 +1,8 @@
+# Roman To Integer
+
 leetcode: https://leetcode.com/problems/roman-to-integer/
 
-思路
+## 思路
 
 羅馬數字正常來說應該要遞減，s[i] > s[i+1]，如果出現遞增的情況，就代表要用減的
 
